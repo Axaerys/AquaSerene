@@ -3,12 +3,10 @@
 |	        Project Collaborators		      |
 |_____________________________________________________|
 |				      		      |
-|	Student Name: Seyed Amir Reza Mousavinezhad   |
-|						      |
+|	     Seyed Amir Reza Mousavinezhad  	      |
 |_____________________________________________________| 
 |				      		      |
-|	Student Name: Rohan Sudhir		      |
-|						      |
+|		    Rohan Sudhir		      |
 |_____________________________________________________|
 
 
