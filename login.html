@@ -1,0 +1,51 @@
+<html>
+<head>
+  <title>Aqua Serene - Login</title>
+  <link rel="icon" type="image/png" href="./images/favicon.png">
+  <link rel="icon" href="./favicon.ico" type="image/x-icon"> 
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon"> 
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="loginStyle.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+ 
+
+  <div class="background-div" id="BGlogin"  style="background-image: url('./images/BG_img_login.jpg')">
+    <div class="form-container">
+    <h1>Login</h1>
+    <form action="/login" id="loginForm" method="POST">
+        <input type="text" id="usernameLogin" name="usernameLogin" required placeholder="Username" onfocus="clearPlaceholder(this)" onblur="restorePlaceholder(this)"> </br>
+        <input type="password" id="passwordLogin" name="passwordLogin" required placeholder="Password" onfocus="clearPlaceholder(this)" onblur="restorePlaceholder(this)"> </br>
+        <button class="custom-button" type="submit" value="Login"><span>Login</span></button>
+ <p>Dont have an account? <a href="signupPage.html"> Register now </a></p>
+ <h5 id="errorMessage"></h5> 
+
+
+ <script>
+
+  function getQueryParam(name) {
+        const params = new URLSearchParams(window.location.search);
+        return params.get(name);
+      }
+  
+      // Check if the 'error' query parameter exists and display the error message
+      const error = getQueryParam('error');
+      if (error === 'invalid') {
+        console.log("error received");
+        document.getElementById('errorMessage').innerHTML = 'Invalid username or password';
+      }
+      else if (error === '105') {
+        console.log("error received");
+        document.getElementById('errorMessage').innerHTML = 'You need to sign in!';
+      }
+   </script>
+
+
+</form>
+
+</div>
+
+</body>
+</html>

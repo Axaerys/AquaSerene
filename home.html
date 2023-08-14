@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>  
+  <title>Aqua Serene</title>
+  <link rel="icon" type="image/png" href="./images/favicon.png">
+  <link rel="icon" href="./favicon.ico" type="image/x-icon"> 
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon"> 
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="script.js"></script>
+  
+</head>
+<body>
+  <div class="tab-management">
+    <a href="#BG1"><img src="./images/LogoName.png" alt=""></a>
+    <div class="tab-buttons">
+     <a href="#BG1"><button class="tab-btn active"><span><u>Home</u></span></button></a>
+     <a href="#BG2"><button class="tab-btn"><span>About Us</span></button></a>
+     <a href="#BG3"><button class="tab-btn"><span>Services</span></button></a>
+     <a href="#BG4"><button class="tab-btn"><span>Book Now</span></button></a>
+     <a href="#BG5"><button class="tab-btn"><span>Contact Us</span></button></a>
+     <a href="./myAccount"><button class="tab-btn" ><span>My Account</span></button></a>
+     <a href="./login.html"><button class="tab-btn"><span>Login</span></button></a>
+    </div>
+  </div>
+
+  <div class="background-div" id="BG1" style="background-image: url('./images/BG_img1.jpg');">
+    <div class="content">
+      <h5>Welcome to Our Spa</h5>
+      <h2>Experience relaxation and rejuvenation like never before.</h2>
+      <p><u>Scroll for more information</u></p>
+    </div>
+  </div>
+
+  
+  <div class="background-div" id="BG2">
+    <img class="img-holder" src="./images/BG_img2.jpg" alt=""> 
+    <div class="content" id="cont2" style="text-align: left; left: 730px;">
+      <h5 style="color: #cf02b4; font-size: 22px;">About Us</h5>
+      <h2 style="color: black; font-size: 24px;">Welcome to our tranquil spa center, where relaxation and rejuvenation await you.</h2>
+      <p style="color: black; font-size: 20px;">
+        Our dedicated team of experienced professionals is committed to providing you with a blissful and luxurious 
+        spa experience. Indulge in a range of therapeutic treatments, soothing massages, and revitalizing beauty 
+        services designed to nourish your body and calm your mind. <br><br> Discover a serene oasis where you can escape 
+        the hustle and bustle of daily life and immerse yourself in a world of serenity and wellness. Unwind, 
+        recharge, and emerge feeling refreshed and revitalized. Your journey to wellness begins here.</p>
+    
+    </div>
+  </div>
+
+  
+  <div class="background-div" id="BG3" style="background-image: url('./images/BG_img3.jpg');">
+    <div class="content" id="cont3">
+      <h5>Services</h5>
+      <h2>Enhance Your Experience with Our Exclusive Service Offerings.</h2>
+      <p>The services we provide:</p>
+    </div>
+    <div class="list">
+        <ul>
+            <li><span>Massages:</span> Relaxing and rejuvenating body treatments.</li>
+            <li><span>Facials:</span> Cleansing and revitalizing skincare treatments.</li>
+            <li><span>Body Treatments:</span> Exfoliating and nourishing for smooth skin.</li>
+            <li><span>Nail Care:</span> Manicures and pedicures for beautiful hands and feet.</li>
+            <li><span>Waxing:</span> Professional hair removal for smooth skin.</li>
+            <li><span>Relaxation Therapies:</span> Sauna, steam rooms, or other relaxation amenities.</li>
+            <li><span>Wellness Consultations:</span> Expert advice on holistic well-being.</li>
+          </ul>
+    </div>
+  </div>
+
+  <div class="background-div" id="BG4">
+    <img class="img-holder" src="./images/BG_img4.jpg" alt="">
+    <div class="content" id="cont2" style="text-align: left; left: 730px;">
+      <h5 style="color: #cf02b4; font-size: 22px;">Book Now</h5>
+      <h2 style="color: black; font-size: 24px;">Indulge in the ultimate relaxation and rejuvenation experience at our exquisite spa oasis.</h2>
+      <p style="color: black; font-size: 20px;">
+        Book your blissful spa date today and treat yourself to a well-deserved escape from the stresses of everyday life. 
+        <br>
+        <br>
+        <b>Unwind, renew, and emerge feeling completely revitalized.</b></p>
+        <br>
+        <br>
+        <br>
+      <a href="./bookingpage"><button class="custom-button"><span>Book Now</span></button></a>
+    </div>
+  </div>
+
+  <div class="background-div" id="BG5" style="background-color: #36002f; height: 300px;">
+    <div class="content" id="cont4" style="text-align: left; left: 90px; top: 240px;">
+      <h5 style="font-size: large; color: white;">Quick Links</h5>
+      <div class="tab-buttons" id="quick-links">
+        <a href="#BG1"><button class="tab-btn"><span>> &nbsp  Home</span></button></a>
+        <a href="#BG2"><button class="tab-btn"><span>>  &nbsp About Us</span></button></a>
+        <a href="#BG3"><button class="tab-btn"><span>>  &nbsp Services</span></button></a>
+        <a href="#BG4"><button class="tab-btn"><span>> &nbsp  Book Now</span></button></a>
+        <a href="#BG4"><button class="tab-btn"><span>> &nbsp  Contact Us</span></button></a>
+        <a href="./myAccount"><button class="tab-btn"><span>> &nbsp My Account</span></button></a>
+       </div>
+    </div>
+
+    <div class="content" id="cont5" style="text-align: left; left: 490px; top: 240px;">
+      <h5 style="font-size: large; color: white;">Contact Us</h5>
+      <div class="info" id="contact-info">
+        <span onclick="copyText(this)"> +971 4 567 8910</span>
+        <span onclick="copyText(this)"> +971 50 123 4567</span>
+        <span onclick="copyText(this)"> spa@aquasense.com</span>
+        <p style="font-size: xx-small;"><br>Click on any of the above addresses to copy it!</p>
+      </div>
+    </div>
+  
+
+    <div class="content" id="cont6" style="text-align: left; left: 890px; top: 240px;">
+      <h5 style="font-size: large; color: white;">Visit Us:</h5>
+      <div class="info" id="contact-info">
+        <span> Al Dhiyafa Road, <br>Jumeirah 1, <br>Dubai, UAE</span>
+        <a target="_blank" href="https://www.google.com/maps/dir//25.2377265,55.2746351/@25.2374736,55.2741068,18.75z/data=!4m2!4m1!3e0?entry=ttu">
+          <u style="font-size: small;">Click here or on the map to <br>get redirected to google maps</u>
+        </a> 
+      </div>  
+    </div>
+
+
+    <div class="content" id="cont7" style="text-align: left; left: 1190px; top: 260px;">
+      <a target="_blank" href="https://www.google.com/maps/dir//25.2377265,55.2746351/@25.2374736,55.2741068,18.75z/data=!4m2!4m1!3e0?entry=ttu">
+        <img class="map-pin" src="./images/map.png" alt="" width="200px" height="200px">
+      </a> 
+    </div>
+  </div>
+  </div>
+
+
+
+
+
+</div>
+</body>
+</html>

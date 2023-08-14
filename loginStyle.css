@@ -1,0 +1,198 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+padding: 0;
+}
+
+
+.background-div {
+    
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100%;
+  height: 703px; 
+  overflow: hidden; 
+  display: flex;
+
+}
+
+
+#BGlogin::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.form-container{
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  height: 350px;
+  width: 380px;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  border: 10px;
+  background-color: rgba(231, 225, 225, 0.818);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+#contSignUp{
+  height: 500px;
+  width: 420px;
+}
+
+#contSignUp p{
+padding-top: 10PX;
+}
+
+h1 {
+  padding-top: 30px;
+  margin-top: 0;
+  color: #36002f;
+}
+
+input {
+  width: 100%;
+  height: 60px;
+  margin: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 5px;
+  text-align: left;
+  border-radius: 10px;
+  border: 3px solid #36002f;
+  background-color: #36002f21;
+  transition: 0.5s;
+}
+
+input:focus {
+  outline: none;
+  border: 3px solid #720063;
+  background-color: #ffffff70;
+}
+input:hover {
+  border: 3px solid #720063;
+  background-color: #ffffff70;
+}
+
+#contSignUp input {
+  width: 300px;
+  height: 50px;
+  position: relative;
+  z-index: 1;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.custom-button {
+  position: relative;
+  z-index: 1;
+  top: 5%;
+  left: 50%;
+  height: 40px;
+  width: 120px;
+  transform: translate(-50%, 0);
+  border-radius: 10px;
+  border: 3px solid #36002f;
+  background-color: #36002f;
+  cursor: pointer;
+  color: #f2f2f2;
+  transition: 0.5s;
+}
+
+
+.custom-button:hover {
+  border: 2px solid #b700a1;
+  color: #f2f2f2;
+}
+
+.custom-button:hover::before {
+  left: 0;
+  opacity: 1;
+}
+
+.custom-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.custom-button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -5px;
+  transition: 0.5s ease;
+}
+
+.custom-button:hover span {
+  padding-right: 15px;
+}
+
+.custom-button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+h5 {
+  text-align: center;
+  margin: 0;
+  color: rgb(186, 1, 1);
+}
+
+P{
+  font-weight: bold;
+  color: #36002f;
+  padding-bottom: 0;
+  padding-top: 10px;
+
+}
+
+#contSignUp p {
+  font-weight: bold;
+  color: #36002f;
+  padding-bottom: 0;
+  padding-top: 10px;
+  position: relative;
+  z-index: 1;
+  top: 0;
+  left: 52%;
+  transform: translate(-50%, 0);
+  width: 280px;
+}
+a {
+  text-decoration: none;
+  text-decoration: underline;
+  color: #36002f;
+  transition: 0.5s ease;
+}
+
+a:hover{
+  color: #720063;
+}
+
+
+
+
+
+  
+
+
+
+
+   

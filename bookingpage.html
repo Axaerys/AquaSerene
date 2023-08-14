@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>  
+        <title>Aqua Serene - Booking</title>
+        <link rel="icon" type="image/png" href="./images/favicon.png">
+        <link rel="icon" href="./favicon.ico" type="image/x-icon"> 
+        <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon"> 
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="bookingStyle.css">
+        <script src="script.js"></script>
+      </head>
+<body>
+    <div class="tab-management">
+        <a href="./home"><img src="./images/LogoName.png" alt=""></a>
+        <div class="tab-buttons">
+            <a href="./home"><button class="tab-btn"><span>Home</span></button></a>
+            <a href="./home#BG2"><button class="tab-btn"><span>About Us</span></button></a>
+            <a href="./home#BG3"><button class="tab-btn"><span>Services</span></button></a>
+            <a href="#" active style="color: #b700a1;"><button class="tab-btn"><span><u>Book Now</u></span></button></a>
+            <a href="./home#BG5"><button class="tab-btn"><span>Contact Us</span></button></a>
+            <a href="./myAccount"><button class="tab-btn"><span>My Account</span></button></a>
+            <a href="./login.html"><button class="tab-btn"><span>Login</span></button></a>
+        </div>
+      </div>
+  
+  <div class="background-div" id="BGbooking"  style="background-image: url('./images/BG_img_booking.jpg')">
+  <section class="booking-content">
+    <h2>Book an Appointment</h2>
+    <form action="/book" method="post">
+      
+      
+      <select id="service" name="service" required>
+        <option value="" disabled selected>Select a service:</option>
+        <option value="Massage">Massage - AED 250</option>
+        <option value="Facial">Facial - AED 150</option>
+        <option value="BoTrea">Body Treatment - AED 300</option>
+        <option value="NailCare">Nail Care - AED 100</option>
+        <option value="Waxing">Waxing - AED 200</option>
+        <option value="RelTher">Relaxation Therapy - AED 250</option>
+        <option value="WellCon">Wellness Consultation - AED 150</option>
+      </select>
+      
+      <input type="date" id="dateInput" name="dateInput" value="dateInput" class="custom-input" required placeholder="Select a date">
+      <input type="time" id="timeInput" name="timeInput" value="timeInput" class="custom-input" required placeholder="Select a time">
+      
+      
+    <button class="custom-button" type="submit" value="BookNow"><span>Confirm</span></button>
+    </form>
+  </section>
+</div>
+
+<div class="background-div" id="BG5" style="background-color: #36002f; height: 300px;">
+  <div class="content" id="cont4" style="text-align: left; left: 90px; top: 240px;">
+    <h5 style="font-size: large; color: white;">Quick Links</h5>
+    <div class="tab-buttons" id="quick-links">
+      <a href="./home#BG1"><button class="tab-btn"><span>> &nbsp  Home</span></button></a>
+      <a href="./home#BG2"><button class="tab-btn"><span>>  &nbsp About Us</span></button></a>
+      <a href="./home#BG3"><button class="tab-btn"><span>>  &nbsp Services</span></button></a>
+      <a href="#"><button class="tab-btn"><span>> &nbsp  Book Now</span></button></a>
+      <a href="./home#BG4"><button class="tab-btn"><span>> &nbsp  Contact Us</span></button></a>
+      <a href="./myAccount"><button class="tab-btn"><span>> &nbsp My Account</span></button></a>
+     </div>
+  </div>
+
+  <div class="content" id="cont5" style="text-align: left; left: 490px; top: 240px;">
+    <h5 style="font-size: large; color: white;">Contact Us</h5>
+    <div class="info" id="contact-info">
+        <span onclick="copyText(this)"> +971 4 567 8910</span>
+        <span onclick="copyText(this)"> +971 50 123 4567</span>
+        <span onclick="copyText(this)"> spa@aquasense.com</span>
+        <span style="font-size: xx-small;"><br>Click on any of the above addresses to copy it!</span>
+    </div>
+  </div>
+
+
+  <div class="content" id="cont6" style="text-align: left; left: 890px; top: 240px;">
+    <h5 style="font-size: large; color: white;">Visit Us:</h5>
+    <div class="info" id="contact-info">
+      <span> Al Dhiyafa Road, <br>Jumeirah 1, <br>Dubai, UAE</span>
+      <a target="_blank" href="https://www.google.com/maps/dir//25.2377265,55.2746351/@25.2374736,55.2741068,18.75z/data=!4m2!4m1!3e0?entry=ttu">
+        <u style="font-size: small;">Click here or on the map to <br>get redirected to google maps</u>
+      </a> 
+    </div>  
+  </div>
+
+
+  <div class="content" id="cont7" style="text-align: left; left: 1190px; top: 260px;">
+    <a target="_blank" href="https://www.google.com/maps/dir//25.2377265,55.2746351/@25.2374736,55.2741068,18.75z/data=!4m2!4m1!3e0?entry=ttu">
+      <img class="map-pin" src="./images/map.png" alt="" width="200px" height="200px">
+    </a> 
+  </div>
+</div>
+</div>
+
+
+<script>
+// Get the current date
+const currentDate = new Date();
+// Calculate tomorrow's date
+const tomorrowDate = new Date(currentDate.getTime() + 24 * 60 * 60 * 1000); // Add 1 day in milliseconds
+
+// Formatting tomorrow's date as YYYY-MM-DD
+const tomorrowDateString = tomorrowDate.toISOString().split('T')[0];
+
+// Getting the date input
+const dateInputs = document.querySelectorAll('input[type="date"]');
+
+// Seting the min attribute of each date input to tomorrow's date
+dateInputs.forEach(input => {
+  input.min = tomorrowDateString;
+});
+
+
+</script>
+
+</body>
+</html>

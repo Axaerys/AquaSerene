@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Aqua Serene - Sign Up</title>
+  <link rel="icon" type="image/png" href="./images/favicon.png">
+  <link rel="icon" href="./favicon.ico" type="image/x-icon"> 
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon"> 
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="loginStyle.css">
+    <script src="./script.js"></script>
+</head>
+  <body>
+ <div class="background-div" id="BGlogin"  style="background-image: url('./images/BG_img_login.jpg')">
+    <div class="form-container" id="contSignUp" >
+    <h1>Sign Up</h1>
+    <form action="/signup" method="POST">
+        
+      
+        <input type="email" id="email" name="email" required placeholder="E-Mail" onfocus="clearPlaceholder(this)" onblur="restorePlaceholder(this)"> </br>
+        <input type="text" id="username" name="username" required placeholder="Username" onfocus="clearPlaceholder(this)" onblur="restorePlaceholder(this)"> </br>
+        <input type="text" id="phone" name="phone" required placeholder="Phone Number: 050 123 4567" onfocus="clearPlaceholder(this)" onblur="restorePlaceholder(this)" oninput="validateNumberInput(event)"> </br>
+        <input type="password" id="password" name="password" required placeholder="Password" onfocus="clearPlaceholder(this)" onblur="restorePlaceholder(this);"> </br>
+        <input type="password" id="confirm_password" name="confirm_password" required placeholder="Confirm Password" onfocus="clearPlaceholder(this)" onblur="restorePlaceholder(this)"> </br>
+
+        <button class="custom-button" type="submit" value="SignUp"><span>Sign Up</span></button>
+ <p>Already have an account? <a href="login.html"> Login </a></p>
+ <h5 id="errorMessageSignUp" style="padding-bottom: 20px;"></h5> 
+
+
+ <script>
+
+  // Error handling using URL querying
+  function getQueryParam(name) {
+        const params = new URLSearchParams(window.location.search);
+        return params.get(name);
+      }
+  
+      
+      const error = getQueryParam('error');
+      if (error === '100') {
+        document.getElementById('errorMessageSignUp').innerHTML = 'Username already taken!';
+      }
+      else if (error === '101') {
+        document.getElementById('errorMessageSignUp').innerHTML = 'Password must be at least 8 characters long and contain at least one special character, one letter, and one number.';
+      }
+      else if (error === '102') {
+        document.getElementById('errorMessageSignUp').innerHTML = 'Phone Number must start with 05 and have exactly 10 digits!';
+      }
+      else if (error === '103') {
+        document.getElementById('errorMessageSignUp').innerHTML = 'Password fields do not match!';
+      } 
+      else if (error === '104') {
+        document.getElementById('errorMessageSignUp').innerHTML = 'Email already taken!';
+      } 
+      else if (error === '105') {
+        document.getElementById('errorMessageSignUp').innerHTML = 'Unknown error occured!';
+      }
+
+   </script>
+</form>
+</div>
+</body>
+</html>
+  
+
+
+
+
